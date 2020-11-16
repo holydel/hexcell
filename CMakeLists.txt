@@ -6,7 +6,7 @@ project(hexcell)
 
 include_directories("include/")
 
-#add_library(ermy SHARED source/ermy.cpp)
+add_library(hexcell SHARED source/hexcell.cpp)
 
-add_executable(editor source/main.cpp)
-#target_link_libraries(editor ermy)
+add_executable(editor source/editor/editor.cpp)
+target_link_libraries(editor hexcell)
