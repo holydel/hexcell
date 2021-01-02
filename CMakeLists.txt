@@ -15,3 +15,5 @@ include_directories("include/")
 add_library(hexcell SHARED source/hexcell.cpp)
 
 add_subdirectory(editor)
+
+add_subdirectory(samples)
